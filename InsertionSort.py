@@ -11,3 +11,7 @@ def insertionSort(lst):
   
         # Insert the current element into lst[k + 1]
         lst[k + 1] = currentElement
+
+
+list1 = [4,13,15,64,2,1,43]
+print(insertionSort(list1))

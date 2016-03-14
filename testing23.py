@@ -1,6 +1,11 @@
-def printList(lst):
-    for element in lst:
-        print(element)
+def linearSearch(lst, key):
+    for i in range(0, len(lst)):
+        if key == lst[i]:
+            return i
+    return -1  ## Meaning "else", so if not there, return this. If not there, "None" is returned.
 
-lst = [3, 1, 2, 6, 4, 2]
-printList(lst)
+a = list(range(2,16))
+
+key = 0
+
+print(linearSearch(a,key))
